@@ -1,6 +1,6 @@
 # Joke Teller
 
-An app that combines a Joke API and a text-to-speech API.
+An app that combines a [Joke API](https://sv443.net/jokeapi/v2/) and a [text-to-speech API](http://www.voicerss.org/api/).
 <br>
 <a href="https://github.com/Diogo-P-Carvalho/joke-teller/blob/main/README.md"><strong>Explore the docs »</strong></a>
 
@@ -37,14 +37,16 @@ An app that combines a Joke API and a text-to-speech API.
 
 ### Objectives
 
--   Getting a joke from the Joke API
--   Converting text to speech
+-   Using [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to get a joke from the [Joke API](https://sv443.net/jokeapi/v2/)
+-   Converting text to speech using a [text-to-speech API](http://www.voicerss.org/api/)
 
 ### Built With
 
 -   HTML5
 -   CSS3
 -   Javascript
+-   Voice RSS API
+-   Joke API
 
 <!-- GETTING STARTED -->
 
@@ -52,7 +54,7 @@ An app that combines a Joke API and a text-to-speech API.
 
 1. Clone this repo
     ```sh
-    git clone https://github.com/Diogo-P-Carvalho/template.git
+    git clone https://github.com/Diogo-P-Carvalho/joke-teller.git
     ```
 2. Run index.html file
 
@@ -88,3 +90,6 @@ Diogo Carvalho - Portfolio Comming Soon - [Linkedin](www.linkedin.com/in/diogo-c
 -   [Google’s Favicon Service](https://www.google.com/s2/favicons?domain=zerotomastery.io)
 -   [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 -   [Github Pages](https://pages.github.com/)
+-   [Voice RSS API](http://www.voicerss.org/api/)
+-   [Joke API](https://sv443.net/jokeapi/v2/)
+-   [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
