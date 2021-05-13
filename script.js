@@ -1,20 +1,25 @@
 const button = document.querySelector('#button');
 const audioElement = document.querySelector('#audio');
+const errorElement = document.querySelector('#error');
 
-// function test() {
-//     VoiceRSS.speech({
-//         key: 'a1e24099a1bc42df9274a4900cbf07a1',
-//         src: 'Hello, world!',
-//         hl: 'en-us',
-//         v: 'Linda',
-//         r: 0, 
-//         c: 'mp3',
-//         f: '44khz_16bit_stereo',
-//         ssml: false
-//     });
-// } 
+// Disable/enable button
+function toggleButton() {
+    button.disabled = !button.disabled;
+}
 
-// test();
+// Passing joke to Voice RSS API
+function tellMe(joke) {
+    VoiceRSS.speech({
+        key: 'a1e24099a1bc42df9274a4900cbf07a1',
+        src: joke,
+        hl: 'en-us',
+        v: 'Linda',
+        r: 0, 
+        c: 'mp3',
+        f: '44khz_16bit_stereo',
+        ssml: false
+    })    
+}
 
 // Get jokes from Joke API
 async function getJokes() {
@@ -28,11 +33,18 @@ async function getJokes() {
         } else {
             joke = jokes.joke;
         }
-        console.log(joke);
+        // text-to-speech
+        tellMe(joke);
+        // disable button
+        toggleButton();
     } catch (error) {
         // catch error here
-        console.log(error);
+        console.log('Ooops ', error);
+        button.hidden = true;
+        errorElement.hidden = false;
     }
 }
 
-getJokes();
+// Event listeners
+button.addEventListener('click', getJokes);
+audioElement.addEventListener('ended', toggleButton);

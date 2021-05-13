@@ -39,6 +39,7 @@ An app that combines a [Joke API](https://sv443.net/jokeapi/v2/) and a [text-to-
 
 -   Using [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to get a joke from the [Joke API](https://sv443.net/jokeapi/v2/)
 -   Converting text to speech using a [text-to-speech API](http://www.voicerss.org/api/)
+-   Preventing the user to click again until the joke is finished
 
 ### Built With
 
@@ -56,7 +57,11 @@ An app that combines a [Joke API](https://sv443.net/jokeapi/v2/) and a [text-to-
     ```sh
     git clone https://github.com/Diogo-P-Carvalho/joke-teller.git
     ```
-2. Run index.html file
+2. Get [Voice RSS API](http://www.voicerss.org/api/) key
+3. Replace to your api key
+4. Get your joke request from [Joke API](https://sv443.net/jokeapi/v2/)
+5. Replace the fetch request
+6. Run index.html file
 
 <!-- ROADMAP -->
 

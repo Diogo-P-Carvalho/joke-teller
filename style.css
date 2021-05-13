@@ -50,6 +50,15 @@ button:disabled {
     filter: brightness(30%);
 }
 
+p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 2px 6px black;
+    font-weight: 700;
+    text-align: center;
+}
+
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
     .container {
